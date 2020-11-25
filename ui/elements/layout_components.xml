@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layoutcomponents name="布局组件">
+    <!--布局组件元素定位管理-->
+    <grouping name="分组">
+
+    </grouping>
+    <remark name="备注">
+
+    </remark>
+    <tab name="选项卡">
+        <element name="定位选项卡" loc="xpath=>//div[contains(@class,'el-tabs__item is-top') and text()='{tab_name}']"/>
+    </tab>
+    <threecolumns name="三列">
+
+    </threecolumns>
+    <twocolumns name="两列">
+
+    </twocolumns>
+</layoutcomponents>

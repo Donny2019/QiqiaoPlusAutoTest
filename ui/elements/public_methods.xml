@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<publicmethods name="公共方法">
+    <!--运行平台公共方法元素定位管理-->
+    <login mudels="登录">
+        <account name="账户登录" loc="id=>account_login"/>
+		<username name="用户名" loc="id=>gerenban_username"/>
+		<password name="密码" loc="id=>gerenban_pass"/>
+		<submit name="登录" loc="id=>btn_login"/>
+    </login>
+    <application mudels="应用">
+
+        <delete_btn name="点击表头删除类型的按钮" loc="xpath=>//div[@data-mark='{button_name}']/span/button"/>
+		<apppage name="应用首页" loc="xpath=>//a[@data-mark='header_menu_应用']"/>
+		<app name="点击应用" loc="xpath=>//div[@data-mark='{app}']"/>
+		<leftmenu name="左侧菜单" loc="xpath=>//span[@title='{menu}']/.."/>
+		<title_btn name="表头按钮" loc="xpath=>//div[@data-mark='{button}']/button"/>
+		<form_btn name="表中操作区按钮" loc="xpath=>//span[@data-mark='{button}_{row}' and @class='normal']"/>
+		<search_btn name="点击搜索按钮" loc="xpath=>//button[@data-mark='筛选条件搜索按钮']"/>
+		<expand name="筛选展开按钮" loc="xpath=>//span[@class='expand']"/>
+		<precesspage name="点击流程页面" loc="xpath=>//a[@data-mark='header_menu_流程']"/>
+		<openprecess name="打开流程" loc="xpath=>//p[@title='{}']/.."/>
+		<submit_btn name="表单提交按钮" loc="xpath=>//span[contains(text(),'提交')]"/>
+		<form_delete_btn name="操作区删除按钮" loc="xpath=>//span[@data-mark='{0}_{1}' and @class='delete']"/>
+		<delete_confirm_top name="删除按钮确定" loc="xpath=>//div[@x-placement='top']//button[@class='el-button el-button--primary']"/>
+		<delete_confirm_bottom name="删除按钮确定" loc="xpath=>//div[@x-placement='bottom']//button[@class='el-button el-button--primary']"/>
+		<cheked_all_data name="选择页面所有数据" loc="xpath=>//div[contains(@data-mark,'列表组件')]//div[@class='el-table__fixed-header-wrapper']//tr[1]//th[1]//span[@class='el-checkbox__inner']"/>
+    	<listname name="列表名称" loc="xpath=>//div[@class='view_title_text']/span"/>
+		<totaldata name="数据总数" loc="xpath=>//span[@class='el-pagination__total']"/>
+	</application>
+    <formcomment mudels="表单评论">
+		<submit desc="提交按钮" loc="xpath=>//button[@class='el-button formNotes_comment_submit el-button--primary']"/>
+		<add_annex desc="添加附件" loc="xpath=>//div[@class='el-upload el-upload--text']"/>
+		<up_time desc="定位上传时间" loc="xpath=>//div[@class='time']/span[text()='{uptime}']"/>
+		<delete_btn desc="评论删除按钮" loc="xpath=>//span[text()='{uptime}']/../../div[1]//span[text()='删除']"/>
+		<confrim desc="确定删除" loc="xpath=>//div[@class='popper__arrow']/../div[1]/button[@class='el-button el-button--primary']"/>
+		<edit_btn desc="编辑评论" loc="xpath=>//span[text()='{uptime}']/../../div[1]/span[text()='编辑']"/>
+		<edit_add_annex desc="编辑页面，添加附件" loc="xpath=>//div[@aria-label='编辑评论']//div[@class='el-upload el-upload--text']"/>
+		<edit_confrim desc="编辑页面确定按钮" loc="xpath=>//button[@data-mark='确定按钮']"/>
+		<edit_delte_annex desc="编辑页面删除附件" loc="xpath=>//div[@class='uploadFileRender_fileList--item']//span[@class='fileOperation']"/>
+		<table_file desc="评论文件table" loc="xpath=>//div[@id='tab-file']"/>
+		<upload_file desc="上传文件" loc="xpath=>//div[@class='el-upload el-upload--text']"/>
+		<upload_file_confirm desc="上传文件提交按钮" loc="xpath=>//button[@class='el-button el-button--primary']/span[text()='提交']"/>
+		<insert_pic desc="评论插入图片" loc="xpath=>//button[@aria-label='上传图片']"/>
+	</formcomment>
+    <process mudels="流程">
+
+    </process>
+    <workbench mudels="工作台">
+
+    </workbench>
+	<msg name="提示信息">
+		<requiredmsg name="校验必填" loc="xpath=>//div[@class='el-form-item__error']"/>
+		<prompt name="提示" loc="xpath=>//p[@class='el-message__content']"/>
+	</msg>
+
+</publicmethods>

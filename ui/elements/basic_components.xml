@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<basiccomponents mudels="基础组件">
+    <!--基础组件元素定位管理-->
+    <addressselection mudels="地址选择">
+        <search name="筛选数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div/div/span"/>
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div/div/span"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div/div/span"/>
+		<province name="省份" loc="xpath=>//div[@class='el-cascader-menus el-popper {0}']//span[text()='{1}']"/>
+		<city name="城市" loc="xpath=>//div[@class='el-cascader-menus el-popper {0}']//span[text()='{1}']"/>
+		<region name="地区" loc="xpath=>//div[@class='el-cascader-menus el-popper {0}']//span[text()='{1}']"/>
+    </addressselection>
+
+    <cascadeselection name="级联选择">
+
+    </cascadeselection>
+
+    <date mudels="日期">
+        <delete name="删除已填日期" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/div//span[@class='el-input__suffix']"/>
+        <comment name="定位日期字段" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/div//input"/>
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//input"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'is-required')]/div//input"/>
+        <label name="收起输入框" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'is-required')]/label"/>
+        <normallabel name="非必填收起输入框" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/label"/>
+        <search name="筛选数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input[1]"/>
+        <startTime name="输入开始时间" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input[1]"/>
+		<endTime name="输入结束时间" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input[2]"/>
+        <packup name="收起输入框" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/label"/>
+        <default name="获取填写值" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/div//input"/>
+        <year name="获取年" loc="xpath=>//div[@class='el-picker-panel el-date-picker el-popper']//div[@class='el-date-picker__header']/span[1]"/>
+        <month name="获取月份" loc="xpath=>//div[@class='el-picker-panel el-date-picker el-popper']//div[@class='el-date-picker__header']/span[2]"/>
+        <day name="获取天" loc="xpath=>//div[@class='el-picker-panel el-date-picker el-popper']//div[@class='el-picker-panel__content']//td[contains(@class,'current')]//span"/>
+		<subForm name="子表输入值" loc="xpath=>//div[@data-mark='子表弹层_{form}']//div[@data-mark='{feild}']//input"/>
+    </date>
+
+    <datetime mudels="日期时间">
+        <delete name="删除按钮" loc="xpath=>//div[@data-mark='{name}']/div//span[@class='ivu-input-suffix']"/>
+        <comment name="定位日期时间" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/div//input"/>
+        <normal name="非必填类型" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//input"/>
+        <required name="必填类型" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//input"/>
+		<label name="收起日期时间输入框" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/label"/>
+		<search name="日期时间筛选数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input[1]"/>
+		<packup name="收起输入框" loc="xpath=>//div[@data-mark='{name}']/label"/>
+		<subForm name="子表日期时间输入值" loc="xpath=>//div[@data-mark='子表弹层_{form}']//div[@data-mark='{feild}']//input"/>
+    </datetime>
+
+    <departmentradio mudels="部门单选">
+        <search name="筛选页面数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+		<departname name="部门全名" loc="xpath=>//div[@title='{}' and @class='text_ellipsis']"/>
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}']//span[text()='+选择部门']"/>
+        <departmentsearch name="组织选择器搜索框" loc="xpath=>//div[@data-mark='组织选择器搜索框']//input"/>
+        <value name="输入部门" loc="xpath=>//div[@class='el-select-dropdown el-popper' and @x-placement='bottom-start']//span[contains(text(),'{value}')]"/>
+        <confim name="确定按钮" loc="xpath=>//div[@class='el-dialog {name}']//button[@data-mark='确定按钮']"/>
+        <default name="默认值" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]//div[@class='flex_layout']//span"/>
+    </departmentradio>
+
+    <generatecoding mudels="生成编码">
+
+    </generatecoding>
+
+    <location mudels="地理位置">
+
+    </location>
+
+    <multiplechoices mudels="多项选择">
+        <checkedrequired name="必填" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'is-required')]/div//label[{index}]//span[@class='el-checkbox__inner']"/>
+        <checkednormal name="非下拉输入值" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/div//label[{index}]//span[@class='el-checkbox__inner']"/>
+        <dropdownnormal name="下拉" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/div//input"/>
+        <drowndownrequired name="下拉必填" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item is-required')]/div//input"/>
+		<packupselector name="非必填收起下拉框" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/label"/>
+		<requiredpackupselector name="必填收起下拉框" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'is-required')]/label"/>
+		<search name="筛选页面数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+        <seachvalue name="搜索选项名称" loc="xpath=>//div[@title='{name}']"/>
+		<selectorname name="点击选项名称" loc="xpath=>//div[@class='el-autocomplete-suggestion el-popper {feildname} selfAutoCompleteListClass']//div[@title='{name}']"/>
+		<packup name="收起下拉框" loc="xpath=>//div[@data-mark='{name}']/label"/>
+		<subForm name="子表单中输入值" loc="xpath=>//div[@data-mark='子表弹层_{form}']//div[@data-mark='{feild}']//input"/>
+    </multiplechoices>
+
+    <multipledepartments mudels="部门多选">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//span[@data-mark='选择部门按钮']"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//span[@data-mark='选择部门按钮']"/>
+        <departmentsearch name="组织选择器搜索框" loc="xpath=>//div[@data-mark='组织选择器搜索框']//input"/>
+        <value name="输入部门" loc="xpath=>//div[@class='el-select-dropdown el-popper {name}' and @x-placement='bottom-start']//span[contains(text(),'{value}')]"/>
+        <confim name="确定按钮" loc="xpath=>//div[@class='el-dialog {name}']//button[@data-mark='确定按钮']"/>
+    </multipledepartments>
+
+    <multiplepersonnelselection mudels="人员多选">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//span"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//span"/>
+		<input name="人员搜索框" loc="xpath=>//div[@data-mark='{name}']//input"/>
+		<fullname name="选择姓名" loc="xpath=>//div[@class='el-select-dropdown el-popper {name}']//span[contains(text(),'{fullname}')]"/>
+		<conf_btn name="确定按钮" loc="xpath=>//div[@class='el-dialog {name}']//button[@data-mark='确定按钮']"/>
+		<search name="筛选页面数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+		<personname name="点击要筛选的人名" loc="xpath=>//div[@title='{}' and @class='text_ellipsis']"/>
+    </multiplepersonnelselection>
+
+    <multipletext mudels="多行文本">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//textarea"/>
+        <linked name="数据联动" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'is-success')]/div//textarea"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//textarea"/>
+		<search name="筛选页面数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+		<subForm name="子表单中多行文本输入值" loc="xpath=>//div[@data-mark='子表弹层_{subname}']//div[@data-mark='{fieldname}']//textarea"/>
+    </multipletext>
+
+    <number mudels="数字">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//input"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//input"/>
+        <linked name="数据联动" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//input"/>
+		<search name="筛选页面数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+		<subForm desc="子表单中输入值" loc="xpath=>//div[@data-mark='子表弹层_{form}']//div[@data-mark='{feild}']//input"/>
+    </number>
+
+    <onlineediting mudels="在线编辑">
+
+    </onlineediting>
+
+    <personnelselection mudels="人员单选">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//span"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//span"/>
+		<input name="人员搜索框" loc="xpath=>//div[@data-mark='{name}']//input"/>
+		<fullname name="选择姓名" loc="xpath=>//div[@class='el-select-dropdown el-popper {name}']//span[contains(text(),'{fullname}')]"/>
+		<conf_btn name="确定按钮" loc="xpath=>//div[@class='el-dialog {name}']//button[@data-mark='确定按钮']"/>
+		<search name="筛选页面数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+		<personname name="点击要筛选的人名" loc="xpath=>//div[@title='{}' and @class='text_ellipsis']"/>
+        <default name="默认值" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]//span[@class='common_select_btn writable']/span"/>
+    </personnelselection>
+
+    <richtext mudels="富文本">
+        <required name="跳转iframe" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'is-required')]//iframe[@class='tox-edit-area__iframe']"/>
+        <input name="跳转iframe" loc="xpath=>//body[@id='tinymce']/p"/>
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item form_item_dyFormEditor']//iframe[@class='tox-edit-area__iframe']"/>
+        <uploadpic name="上传图片" loc="xpath=>//button[@aria-label='上传图片']"/>
+    </richtext>
+
+    <score mudels="评分">
+        <search desc="筛选数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+        <scorenumber desc="点击筛选分数" loc="xpath=>//div[@title='{name}']"/>
+        <packup desc="收起下拉框" loc="xpath=>//div[@data-mark='{name}']/label"/>
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//span[{score}]"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//span[{score}]"/>
+    </score>
+
+    <singlechoice mudels="单项选择">
+        <chekednormal name="勾选类型非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']//div/label[{index}]/span[@class='el-radio__input']"/>
+        <chekedrequired name="勾选类型必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']//div/label[{index}]/span[@class='el-radio__input']"/>
+		<search name="筛选页面数据" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+		<value name="点击搜索下拉选项值" loc="xpath=>//div[@title='{name}' and @class='text_ellipsis']"/>
+		<subForm name="子表单中输入值" loc="xpath=>//div[@data-mark='子表弹层_{form}']//div[@data-mark='{feild}']//input"/>
+		<dropdown name="下拉选项" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//input"/>
+		<dropvalue name="输入时选择下拉值" loc="xpath=>//div[@class='el-select-dropdown el-popper {feildname}']//li[@data-mark='{name}']/span"/>
+		<packup name="收起下拉框" loc="xpath=>//div[@data-mark='{name}']/label"/>
+    </singlechoice>
+
+    <singlelinetext mudels="单行文本">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//input"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//input"/>
+        <linked name="联动写入" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-success']/div//input"/>
+        <search name="筛选" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input"/>
+        <subform name="子表单输入" loc="xpath=>//div[@data-mark='子表弹层_{form}']//div[@data-mark='{feild}']//input"/>
+    </singlelinetext>
+
+    <summary mudels="汇总">
+
+    </summary>
+
+    <time mudels="事件">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//input"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'is-required')]/div//input"/>
+		<label name="收起事件输入框" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/label"/>
+		<startTime name="搜索开始时间" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input[1]"/>
+		<endTime name="搜索结束时间" loc="xpath=>//div[@data-mark='{name}' and @searhstatus='true']/div//input[2]"/>
+		<packup name="收起输入框" loc="xpath=>//div[@data-mark='{name}']/label"/>
+		<subForm name="子表输入值" loc="xpath=>//div[@data-mark='子表弹层_{form}']//div[@data-mark='{feild}']//input"/>
+    </time>
+
+    <uploadpicture mudels="图片上传">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']//div[@class='image_container component_detail']//div[@class='el-upload el-upload--picture-card']"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']//div[@class='image_container component_detail']//div[@class='el-upload el-upload--picture-card']"/>
+        <msg name="校验弹窗" loc="xpath=>//div[@class='el-message-box__message']/p"/>
+    </uploadpicture>
+
+    <uploadfile mudels="文件上传">
+        <normal name="非必填" loc="xpath=>//div[@data-mark='{name}']//div[@class='canDrag_wrapper']"/>
+        <required name="必填" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']//div[@class='canDrag_wrapper']"/>
+    </uploadfile>
+</basiccomponents>

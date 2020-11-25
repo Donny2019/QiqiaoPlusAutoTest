@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<relationcomponents name="关联组件">
+    <!--关联组件元素定位管理-->
+    <childtablerelation mudels="子表关联">
+
+    </childtablerelation>
+    <foreignkeyselection mudels="外键选择">
+        <normal name="非必填类型" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item']/div//input"/>
+        <required name="必填类型" loc="xpath=>//div[@data-mark='{name}' and @class='el-form-item is-required']/div//input"/>
+        <input name="输入外键" loc="xpath=>//div[@data-mark='{name}' and contains(@class,'el-form-item')]/div//div[@class='el-form-item']//input"/>
+        <option name="外键选项" loc="xpath=>//li[@data-mark='option_{option}']"/>
+    </foreignkeyselection>
+    <multipletablerelation mudels="多表关联">
+
+    </multipletablerelation>
+    <relatedinquiry mudels="关联查询">
+
+    </relatedinquiry>
+    <subform mudels="子表单">
+        <addoneline name="添加一行" loc="xpath=>//div[@data-mark='{name}']//span[text()='添加一行']"/>
+		<addbtn name="添加按钮" loc="xpath=>//div[@data-mark='{name}']//span[text()='添加']"/>
+		<savebtn name="保存按钮" loc="xpath=>//div[@data-mark='子表弹层_{sub}']//span[text()='{button}']"/>
+		<drop name="鼠标悬浮" loc="xpath=>//tr[@class='el-table__row row_{sub}_{num}']/td[1]"/>
+		<editbtn name="编辑按钮" loc="xpath=>//tr[@class='el-table__row row_{sub}_{num} hover-row']//span[@class='iconfont iconbianji primary_color']"/>
+		<deletebtn name="删除按钮" loc="xpath=>//tr[@class='el-table__row row_子表单_0 hover-row']//span[@class='iconfont iconyewusheji-shanchu primary_color']"/>
+    </subform>
+
+</relationcomponents>

@@ -1,0 +1,66 @@
+beta:
+  cookies:
+    domain: .qy.do1.com.cn
+    httpOnly: true
+    name: X-Auth0-Token
+    path: /qiqiao/runtime
+    secure: false
+    value: c17de2ad5e5e27906159c752cbbc4509
+  date: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=a332bdeac3e549599c73f19fd9011548&mainColor=red&businessModelId=eed1ec9fcd54469facc923577f4197e8
+  foreignkey: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=5f9a54bbe56139000147b82a&mainColor=red&businessModelId=5f9a57521acfb80001b2f30a
+  formcomment: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=fa6415a4f4544b83b1cb1aed9fb12829&mainColor=green&businessModelId=ced3859b6fc744809f52a7cf6f00c170
+  multilinetext: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=a332bdeac3e549599c73f19fd9011548&mainColor=red&businessModelId=c160c0353c6943248304ec2382222e6e
+  multiplechoice: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=bda2064e73ac4a56a0ca424af43495ba
+  number: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=a332bdeac3e549599c73f19fd9011548&mainColor=red&businessModelId=bc6f714aff444d8ebfbc34629629c71c
+  password: qiqiao123
+  pc_business: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=fa6415a4f4544b83b1cb1aed9fb12829&mainColor=green&businessModelId=ced3859b6fc744809f52a7cf6f00c170
+  singlechoice: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=a332bdeac3e549599c73f19fd9011548&mainColor=red&businessModelId=ef881fe06c944534ad1b03d1cac9de36
+  singlelinetext: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=a332bdeac3e549599c73f19fd9011548&mainColor=red&businessModelId=a1affdd993b64bd78c5462b2ccfee30c
+  switch: off
+  url: https://qy.do1.com.cn/qiqiao/runtime
+  username: WangDongYi@auto
+prod:
+  cookies:
+    domain: .qy.do1.com.cn
+    httpOnly: true
+    name: X-Auth0-Token
+    path: /qiqiao/runtime
+    secure: false
+    value: 766c215d879ae99988dffb3795d7655f
+  departmentradio: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=e0ee234106df4aadbdeec98d4ea2531d
+  personnelselection: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=c615255152e3484690a1394c4a3a3f1d
+  uploadfile: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=a39fa82a03e24b9595d5ed743ca49606
+  uploadpic: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=dd7e3a523e0541dd9bfbaa3008de698b
+  date: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=a8a87548ecef465388caca65a866c323
+  foreignkey: https://qy.do1.com.cn/qiqiao/runtime/#/application/business?applicationId=5f9a54bbe56139000147b82a&mainColor=red&businessModelId=5f9a57521acfb80001b2f30a
+  formcomment: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=a0504308ba324ea8875656f40b3d2603&mainColor=green&businessModelId=5f992e3cb4da92000175d07c
+  multilinetext: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=c3f7ea08177249cf83c2df0df79b65ad
+  multiplechoice: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=bda2064e73ac4a56a0ca424af43495ba
+  number: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=df280d0f13934ca1a72b39f3b54942c6
+  password: qiqiao123
+  pc_business: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=a0504308ba324ea8875656f40b3d2603&mainColor=green&businessModelId=d47c703455204809a31653902a9634eb
+  singlechoice: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=e28a9caeca8e49f280a96dad7181c79b
+  singlelinetext: https://qy.do1.com.cn/qiqiao/runtime/?corp_id=ww88ab25700363caa5#/application/business?applicationId=e607918be8cf4696bfb71ff241a891be&mainColor=red&businessModelId=b35451d78e9a4f5dba620650dfa7323f
+  switch: true
+  url: https://qy.do1.com.cn/qiqiao/runtime
+  username: WangDongYi@do
+  browser: chrome
+qa:
+  cookies:
+    domain: .tqy.do1.net.cn
+    httpOnly: true
+    name: X-Auth0-Token
+    path: /qa-runtime
+    secure: false
+    value: 34fbe0a5ad07e4f1edb16a2a56b557bd
+  date: https://tqy.do1.net.cn/qa-runtime/?corp_id=wwf0d1682926a0822d#/application/business?applicationId=5d847ee784d5ff6afa1c6412&mainColor=red&businessModelId=5d87332884d5ff6afa1c64b1
+  multilinetext: https://tqy.do1.net.cn/qa-runtime/?corp_id=wwf0d1682926a0822d#/application/business?applicationId=5d847ee784d5ff6afa1c6412&mainColor=red&businessModelId=5d8732c184d5ff6afa1c64ad
+  multiplechoice: https://tqy.do1.net.cn/qa-runtime/?corp_id=wwf0d1682926a0822d#/application/business?applicationId=5d847ee784d5ff6afa1c6412&mainColor=red&businessModelId=5d87330084d5ff6afa1c64b0
+  number: https://tqy.do1.net.cn/qa-runtime/?corp_id=wwf0d1682926a0822d#/application/business?applicationId=5d847ee784d5ff6afa1c6412&mainColor=red&businessModelId=5d8732d884d5ff6afa1c64ae
+  password: qiqiao123
+  pc_business: https://tqy.do1.net.cn/qa-runtime/?corp_id=wwf0d1682926a0822d#/application/business?applicationId=5f5ca0d2fb38ac158b2c0132&mainColor=green&businessModelId=5f5ca21ffb38ac158b2c0138
+  singlechoice: https://tqy.do1.net.cn/qa-runtime/?corp_id=wwf0d1682926a0822d#/application/business?applicationId=5d847ee784d5ff6afa1c6412&mainColor=red&businessModelId=5d8732ee84d5ff6afa1c64af
+  singlelinetext: https://tqy.do1.net.cn/qa-runtime/?corp_id=wwf0d1682926a0822d#/application/business?applicationId=5d847ee784d5ff6afa1c6412&mainColor=red&businessModelId=5d8732a284d5ff6afa1c64ac
+  switch: false
+  url: https://tqy.do1.net.cn/qa-runtime
+  username: WangDongYi@Aa
