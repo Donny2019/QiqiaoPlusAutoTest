@@ -20,7 +20,7 @@ class Login():
         '''登录PC端运行平台'''
         username = WebConfig().username()
         password = WebConfig().password()
-        driver = webdriver.Chrome(executable_path=UiPath.chrome_driver_path)
+        driver = webdriver.Chrome(executable_path=UiPath.firefox_driver_path)
         UiDriver(driver).openUrl(url)
         UiDriver(driver).clickElement(Operation().readXml("login", "account"))
         UiDriver(driver).sendKeys(Operation().readXml("login", "username"), username)
