@@ -10,7 +10,7 @@ import os
 class UiPath:
     base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     chrome_driver_path = base_path + "/ui/drivers/chromedriver.exe"
-    firefox_driver_path = base_path + "/ui/drivers/geckodriver.exe"
+    firefox_driver_path = base_path + "/ui/drivers/geckodriver"
     exe_path = base_path + "/ui/data/exe/upload.exe"
     file_path = base_path + "/ui/data/file"
     xml_path = base_path + "/ui/elements"
