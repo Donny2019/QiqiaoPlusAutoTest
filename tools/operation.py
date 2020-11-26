@@ -52,9 +52,7 @@ class Operation():
 
     def readYaml(self,file_name, key=None, key1=None):
         '''读取yaml配置文件'''
-        # curPath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        # yamlPath =curPath +  "\\web\\config\\{0}".format(file_name)
-        yamlPath = UiPath.yaml_path + "\\" + file_name
+        yamlPath = UiPath.yaml_path + "/" + file_name
         f = open(yamlPath, 'r', encoding='utf-8')
         cfg = f.read()
         d = yaml.safe_load(cfg)
