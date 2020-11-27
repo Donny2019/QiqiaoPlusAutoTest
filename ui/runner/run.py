@@ -4,6 +4,7 @@
 @Time    : 2020/11/26 16:12
 @File    : run.py
 '''
+# -*- coding: utf-8 -*-
 
 import HTMLReport,unittest
 from setting.globalset import UiPath
