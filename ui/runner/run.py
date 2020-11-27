@@ -4,7 +4,7 @@
 @Time    : 2020/11/26 16:12
 @File    : run.py
 '''
-# -*- coding: utf-8 -*-
+
 
 import HTMLReport,unittest
 from setting.globalset import UiPath
@@ -19,11 +19,11 @@ path = Operation().makeFile(report_file)
 if __name__=="__main__":
     discover = unittest.defaultTestLoader.discover(UiPath.cases_path, pattern="test_*.py", top_level_dir=None)
     runner = HTMLReport.TestRunner(
-                     report_file_name="七巧Web自动化测试报告",
-                     log_file_name="日志文件",
+                     report_file_name="report",
+                     log_file_name="log",
                      output_path=path ,
-                     title= "ui测试报告",
-                     description= "七巧回归测试",
+                     title= "WebReport",
+                     description= "qiqiao",
                      thread_count=2,
                      thread_start_wait= 5,
                      sequential_execution=True,
