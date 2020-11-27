@@ -48,7 +48,7 @@ class Login():
             driver.get(direct_url)
         elif bowser == "chrome":
 
-            driver = webdriver.Chrome(executable_path=Path.chrome_driver_path)
+            driver = webdriver.Chrome(executable_path=UiPath.chrome_driver_path)
             driver.maximize_window()
             driver.get(WebConfig().url())
             driver.get(direct_url)
